@@ -1,0 +1,233 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://TitleBar.gd" type="Script" id=1]
+[ext_resource path="res://static/Raleway-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://raleway.tres" type="DynamicFont" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 1, 0.890196, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.00784314, 0.980392, 0, 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 14
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.227451, 0.266667, 0.235294, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0.752941, 0.223529, 1 )
+border_width_right = 11
+border_color = Color( 0.454902, 1, 0, 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -2.0
+margin_top = 21.0
+margin_right = 1281.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 240, 167 )
+color = Color( 0.160784, 0.160784, 0.160784, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleBar" type="Control" parent="ColorRect"]
+margin_left = 1.0
+margin_top = 0.125
+margin_right = 41.0
+margin_bottom = 40.125
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/TitleBar"]
+margin_left = 1.0
+margin_top = -26.5
+margin_right = 1287.0
+margin_bottom = 5.5
+rect_pivot_offset = Vector2( 240, 167 )
+color = Color( 0.290196, 0.807843, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="ColorRect"]
+margin_left = 876.684
+margin_top = 80.4137
+margin_right = 1256.68
+margin_bottom = 105.414
+rect_pivot_offset = Vector2( -5.83728, 12.5 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+custom_styles/focus = SubResource( 2 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "SAVE FILE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="ColorRect"]
+margin_left = 876.965
+margin_top = 113.588
+margin_right = 1256.96
+margin_bottom = 138.588
+rect_pivot_offset = Vector2( -5.83728, 12.5 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+custom_styles/focus = SubResource( 2 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "OPEN EDITOR"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="ColorRect"]
+margin_left = 876.92
+margin_top = 47.4137
+margin_right = 1256.92
+margin_bottom = 72.4137
+rect_pivot_offset = Vector2( -5.83728, 12.5 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+custom_styles/focus = SubResource( 2 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "OPEN FILE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="ColorRect"]
+margin_left = 876.913
+margin_top = 15.4821
+margin_right = 1256.91
+margin_bottom = 40.4821
+rect_pivot_offset = Vector2( -5.83728, 12.5 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+custom_styles/focus = SubResource( 2 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "NEW FILE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+margin_left = 7.85521
+margin_top = -17.1335
+margin_right = 185.855
+margin_bottom = 22.8665
+custom_fonts/normal_font = SubResource( 3 )
+text = "LME (EARLY BETA)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="ColorRect"]
+margin_left = 18.0
+margin_top = 15.0
+margin_right = 868.0
+margin_bottom = 690.0
+rect_pivot_offset = Vector2( 222.72, 347.265 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/member_variable_color = Color( 0, 0, 0, 1 )
+custom_colors/code_folding_color = Color( 0.0705882, 1, 0, 1 )
+custom_colors/function_color = Color( 0, 0, 0, 1 )
+custom_colors/safe_line_number_color = Color( 0, 0, 0, 1 )
+custom_colors/symbol_color = Color( 0.0705882, 1, 0, 1 )
+custom_colors/caret_background_color = Color( 0, 0, 0, 1 )
+custom_colors/bookmark_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0.235294, 1, 0, 1 )
+custom_colors/caret_color = Color( 0, 0, 0, 1 )
+custom_colors/breakpoint_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/line_number_color = Color( 0.0117647, 1, 0, 1 )
+custom_colors/completion_font_color = Color( 0, 0, 0, 1 )
+custom_colors/completion_scroll_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 0, 0, 0, 1 )
+custom_colors/number_color = Color( 0, 0, 0, 1 )
+custom_colors/completion_background_color = Color( 0, 0, 0, 1 )
+custom_colors/brace_mismatch_color = Color( 0.462745, 1, 0, 1 )
+custom_colors/current_line_color = Color( 0, 0, 0, 1 )
+custom_colors/completion_selected_color = Color( 0, 0, 0, 1 )
+custom_colors/mark_color = Color( 0, 0, 0, 1 )
+custom_colors/word_highlighted_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_readonly = Color( 0, 0, 0, 1 )
+custom_colors/completion_existing_color = Color( 0, 0, 0, 1 )
+text = "f"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="ColorRect"]
+margin_left = 878.0
+margin_top = 151.0
+margin_right = 1257.0
+margin_bottom = 690.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect/Panel"]
+margin_left = 14.9778
+margin_top = 3.13194
+margin_right = 370.978
+margin_bottom = 511.132
+rect_pivot_offset = Vector2( -633.482, -179.265 )
+custom_fonts/normal_font = ExtResource( 3 )
+text = "
+
+Hello!
+Welcome to the LME Editor Beta, LME is a Game Editor. This also comes with a framework for making c# games with our editor. To find the docs, go to flamistudio.blogspot.com. Have fun making awesome games!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/Panel"]
+margin_right = 379.0
+margin_bottom = 32.0
+rect_pivot_offset = Vector2( 240, 167 )
+color = Color( 0.360784, 1, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="ColorRect/Panel/ColorRect"]
+margin_left = 14.6638
+margin_top = 5.96355
+margin_right = 370.664
+margin_bottom = 513.964
+rect_pivot_offset = Vector2( -633.482, -179.265 )
+custom_fonts/normal_font = ExtResource( 3 )
+text = "INFORMATION"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect/Panel"]
+margin_left = -869.0
+margin_top = -136.0
+margin_right = -859.0
+margin_bottom = 539.0
+rect_pivot_offset = Vector2( 240, 167 )
+color = Color( 0.227451, 0.266667, 0.235294, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="gui_input" from="ColorRect/TitleBar" to="ColorRect/TitleBar" method="_on_TitleBar_gui_input"]
